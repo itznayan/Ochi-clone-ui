@@ -3,7 +3,11 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div className="w-full  p-20 text-[#212121] font-['verdana'] text-[3vw] leading-[4vw] rounded-t-3xl bg-[#CDEA68]">
+      <div
+        data-scroll
+        data-scroll-speed=".95"
+        className="w-full  p-20 text-[#212121] font-['verdana'] text-[3vw] leading-[4vw] rounded-t-3xl bg-[#CDEA68]"
+      >
         <h1 className="w-[80vw]">
           Ochi is a strategic partner for fast-grow­ing tech businesses that
           need to raise funds, sell prod­ucts, ex­plain com­plex ideas, and hire
@@ -35,7 +39,11 @@ const About = () => {
           className="border-t-[1px] max-w-full
          border-black"
         ></div>
-        <div className="max-sm:flex-col flex justify-between px-0 py-10 ">
+        <div
+          data-scroll
+          data-scroll-speed=".4"
+          className="max-sm:flex-col flex justify-between px-0 py-10 "
+        >
           <div className="w-1/2">
             <h1>Our approach:</h1>
             <button className="uppercase flex items-center mt-4 justify-between gap-6  bg-zinc-900 text-white text-sm px-8  py-5 rounded-full">

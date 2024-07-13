@@ -1,17 +1,36 @@
+import { motion } from "framer-motion";
 import { IoMdArrowBack } from "react-icons/io";
 const LandingPage = () => {
   return (
     <div className="w-full h-screen pt-1 bg-zinc-900">
       <div className="px-20 textstructure mt-52">
         {["WE CREATE", "EYE-OPENING", "PRESENTATIONS"].map((item, index) => (
-          <div key={index} className="masker">
+          <div
+            data-scroll
+            data-scroll-speed={".008" * index}
+            key={index}
+            className="masker"
+          >
             <div className="w-fit flex items-center">
               {index === 1 && (
-                <div className="w-[6vw] h-[5vw] bg-red-600 rounded-md"></div>
+                <motion.div
+                  initial={{
+                    width: 0,
+                    height: "8vh",
+                    marginRight: 0,
+                  }}
+                  animate={{
+                    width: [0, 100],
+                    height: "8vh",
+                    marginRight: 10,
+                  }}
+                  transition={{ duration: 0.9, type: "spring" }}
+                  className=" bg-red-600 rounded-md"
+                ></motion.div>
               )}
-              <h1 className="uppercase text-[5vw] leading-[6vw] tracking-[-0.5vw] font-['Verdana'] font-bold">
+              <div className="uppercase text-[5vw] leading-[6vw] tracking-[-0.5vw] font-['Verdana'] font-bold">
                 {item}
-              </h1>
+              </div>
             </div>
           </div>
         ))}

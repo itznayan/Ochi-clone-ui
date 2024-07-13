@@ -3,8 +3,11 @@ import Eyes from "./components/Eyes";
 import LandingPage from "./components/LandingPage";
 import Marquee from "./components/Marquee";
 import Navbar from "./components/Navbar";
+import LocomotiveScroll from "locomotive-scroll";
+import Project from "./components/Project";
 
 function App() {
+  const locomotiveScroll = new LocomotiveScroll();
   return (
     <div className="w-full min-h-screen bg-zinc-900 text-white ">
       <Navbar />
@@ -12,6 +15,7 @@ function App() {
       <Marquee />
       <About />
       <Eyes />
+      <Project />
     </div>
   );
 }
