@@ -3,11 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div
-        data-scroll
-        data-scroll-speed=".95"
-        className="w-full  p-20 text-[#212121] font-['verdana'] text-[3vw] leading-[4vw] rounded-t-3xl bg-[#CDEA68]"
-      >
+      <div className="w-full  p-20 text-[#212121] font-['verdana'] text-[3vw] leading-[4vw] rounded-t-3xl bg-[#CDEA68]">
         <h1 className="w-[80vw]">
           Ochi is a strategic partner for fast-grow­ing tech businesses that
           need to raise funds, sell prod­ucts, ex­plain com­plex ideas, and hire
@@ -41,7 +37,7 @@ const About = () => {
         ></div>
         <div
           data-scroll
-          data-scroll-speed=".4"
+          data-scroll-speed="0.1"
           className="max-sm:flex-col flex justify-between px-0 py-10 "
         >
           <div className="w-1/2">

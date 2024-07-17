@@ -2,7 +2,12 @@ import { motion } from "framer-motion";
 import { IoMdArrowBack } from "react-icons/io";
 const LandingPage = () => {
   return (
-    <div className="w-full h-screen pt-1 bg-zinc-900">
+    <div
+      data-scroll
+      data-scroll-speed="-0.35"
+      data-scroll-section
+      className="w-full h-screen pt-1 bg-zinc-900"
+    >
       <div className="px-20 textstructure mt-52">
         {["WE CREATE", "EYE-OPENING", "PRESENTATIONS"].map((item, index) => (
           <div
