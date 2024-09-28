@@ -29,7 +29,7 @@ const LandingPage = () => {
                     height: "8vh",
                     marginRight: 10,
                   }}
-                  transition={{ duration: 0.9, type: "spring" }}
+                  transition={{ delay: 0.4, duration: 0.9, type: "spring" }}
                   className=" bg-red-600 rounded-md"
                 ></motion.div>
               )}
